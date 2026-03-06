@@ -62,10 +62,10 @@ except Exception as e:
 cluster_summary = pd.DataFrame({
     "Cluster": [0,1,2,3],
     "Segment": [
-        "Dormant Customers",
-        "Loyal High-Value Customers",
-        "Active Mid-Value Customers",
-        "One-Time Customers"
+        "Seasonal Customers",
+        "MVP",
+        "Mid-Value Customers",
+        "Low Value Customers"
     ],
     "Customers": [1763,1142,1552,1421],
     "Customer Share": ["30.0%","19.4%","26.4%","24.2%"],
@@ -285,6 +285,7 @@ if page == "Limitations":
     marketing response, and behavioral engagement data.
 
     """)
+
 
 
 
