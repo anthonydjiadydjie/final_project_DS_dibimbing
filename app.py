@@ -87,7 +87,7 @@ if page == "Profile":
     col1, col2 = st.columns([1,2])
 
     with col1:
-        image_path = os.path.join("assets", "formal_pic.jpg")
+        image_path = os.path.join("formal_pic.jpg")
 
         if os.path.exists(image_path):
             image = Image.open(image_path)
@@ -175,7 +175,7 @@ if page == "Clustering Method":
     with col1:
         st.subheader("Elbow Method")
 
-        elbow_path = os.path.join("assets","elbow_method.png")
+        elbow_path = os.path.join("elbow_method.png")
 
         if os.path.exists(elbow_path):
             st.image(elbow_path, use_container_width=True)
@@ -183,7 +183,7 @@ if page == "Clustering Method":
     with col2:
         st.subheader("Silhouette Method")
 
-        sil_path = os.path.join("assets","silhouette_method.png")
+        sil_path = os.path.join("silhouette_method.png")
 
         if os.path.exists(sil_path):
             st.image(sil_path, use_container_width=True)
@@ -285,4 +285,5 @@ if page == "Limitations":
     marketing response, and behavioral engagement data.
 
     """)
+
 
