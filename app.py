@@ -35,6 +35,9 @@ page = st.sidebar.radio(
 # =========================
 # LOAD DATA
 # =========================
+# =========================
+# LOAD DATA
+# =========================
 @st.cache_data
 def load_data():
     file_path = os.path.join("data", "online_retail_cleaned.parquet")
@@ -45,6 +48,13 @@ def load_data():
     df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
 
     return df
+
+
+try:
+    df = load_data()
+except Exception as e:
+    st.error(f"Failed to load dataset: {e}")
+    st.stop()
 
 # =========================
 # CLUSTER SUMMARY DATA
@@ -273,4 +283,5 @@ if page == "Limitations":
     st.write("""
     Future improvements may include demographic,
     marketing response, and behavioral engagement data.
+
     """)
