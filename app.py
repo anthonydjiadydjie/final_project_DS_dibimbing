@@ -204,7 +204,7 @@ if page == "PCA Visualization":
     PCA was used to visualize customer clusters in two dimensions.
     """)
 
-    pca_path = os.path.join("assets","PCA final.png")
+    pca_path = os.path.join("PCA final.png")
 
     if os.path.exists(pca_path):
         st.image(pca_path, use_container_width=True)
@@ -285,5 +285,6 @@ if page == "Limitations":
     marketing response, and behavioral engagement data.
 
     """)
+
 
 
