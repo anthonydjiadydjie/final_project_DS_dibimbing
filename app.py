@@ -40,7 +40,7 @@ page = st.sidebar.radio(
 # =========================
 @st.cache_data
 def load_data():
-    file_path = os.path.join("data", "online_retail_cleaned.parquet")
+    file_path = os.path.join("online_retail_cleaned.parquet")
 
     df = pd.read_parquet(file_path, engine="pyarrow")
 
@@ -285,3 +285,4 @@ if page == "Limitations":
     marketing response, and behavioral engagement data.
 
     """)
+
